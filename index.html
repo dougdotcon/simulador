@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador de Parcelas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Simulador de Parcelas</h1>
+        <label for="valor">Digite o valor a parcelar:</label>
+        <input type="number" id="valor" placeholder="Ex: 4600">
+        <button onclick="calcularParcelas()">Calcular</button>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Taxas</th>
+                    <th>Número de Parcelas</th>
+                    <th>Valor por Parcela</th>
+                    <th>Valor Total</th>
+                </tr>
+            </thead>
+            <tbody id="tabela-parcelas">
+                <!-- As linhas serão preenchidas pelo JavaScript -->
+            </tbody>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
